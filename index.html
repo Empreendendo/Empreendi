@@ -1,81 +1,281 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serviços Digitais</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .servico {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      background: #fff;
-    }
-    .botao {
-      display: inline-block;
-      background: #4CAF50;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .botao:hover {
-      background: #45a049;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Meus Serviços Digitais</h1>
-  <p>Lista de fornecedores atualizados</p>
+<header style="background-color: #800040; color: white; text-align: center; padding: 30px 20px; border-bottom: 4px solid #ff4081;">
+    <h1 style="font-size: 2.8rem;">💖Sua Lista de Fornecedores Perfeita!💖</h1>
+    <p style="font-size: 1.5rem; font-weight: 600;">Para quem ama maquiagem 💅, biquíni 👙, acessórios 💍 e tudo para brilhar no seu negócio!</p>
 </header>
 
-<section>
-  <h2>O que eu ofereço</h2>
+<!-- Letreiro com texto animado -->
+<div class="marquee" style="text-align: center;">
+    <p class="marquee-text" style="font-size: 1.2rem; margin: 0;">
+        🛍️ Produtos a partir de R$ 1,00! Fornecedores com Suporte, Renda Extra e Lucros! 💰
+    </p>
+</div>
 
-  <div class="servico">
-    <h3>Lista de Fornecedores para Loja Online</h3>
-    <p>Quer montar sua loja virtual, mas não sabe por onde começar?</p>
-    <p>Receba uma lista exclusiva com fornecedores confiáveis e selecionados para quem deseja empreender no digital. A lista inclui:</p>
-    <ul>
-      <li>Fornecedores nacionais com ótimo custo-benefício</li>
-      <li>Produtos populares no e-commerce (moda, beleza, acessórios, etc.)</li>
-      <li>Informações de contato e redes sociais dos fornecedores</li>
-    </ul>
-    <a href="https://mpago.la/SEU_LINK_PIX" class="botao" target="_blank">Comprar lista por R$15,00</a>
-  </div>
+    <span></span>
+</div>
+
+<section style="text-align: center; padding: 40px 20px; background-color: #f4f4f4;">
+    <h2 style="font-size: 2.2rem; color: #800040;">O que oferecemos?</h2>
+    <p style="font-size: 1.4rem; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+        Na Lista de Fornecedores, você encontra as melhores opções de maquiagens de qualidade 💄,biquínis incríveis👙, e acessórios modernos💍. 
+        Oferecemos um catálogo com os fornecedores mais confiáveis do mercado para você arrasar no seu negócio! 
+        Se você está começando ou já é um expert, nossa lista é perfeita para quem busca produtos de qualidade com preços competitivos. 
+        E o melhor? Tudo na palma da sua mão, com uma navegação simples e ágil para não perder tempo! ⏱️
+    </p>
+</section>
+<!-- Botão interativo de "Quero Adquirir Minha Lista" -->
+<section style="text-align: center; padding: 40px 20px;">
+    <button id="acquireButton" onclick="scrollToForm()" style="font-size: 1.6rem; background-color: #ff4081; color: white; padding: 15px 25px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: moveButton 2s ease-in-out infinite;">
+        🎉 Quero Adquirir Minha Lista! 🎉
+    </button>
+</section>
+<!-- Seção "Como Funciona?" -->
+<section style="text-align: center; padding: 40px 20px; background-color: #fff;">
+    <h2 style="font-size: 2.2rem; color: #800040;">🛒 Como Funciona?</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 250px;">
+            <img src="icone1.svg" alt="" style="width: 50px; margin-bottom: 10px;">
+            <h4 style="font-size: 1.4rem; color: #800040;">1. Escolha o plano ideal</h4>
+            <p style="font-size: 1.2rem; color: #333;">Escolha o plano que mais se adapta às suas necessidades, seja para revender ou comprar para seu próprio uso.</p>
+        </div>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 250px;">
+            <img src="icone2.svg" alt="" style="width: 50px; margin-bottom: 10px;">
+            <h4 style="font-size: 1.4rem; color: #800040;">2. Acesse a lista de fornecedores</h4>
+            <p style="font-size: 1.2rem; color: #333;">Após o pagamento, você terá acesso à nossa lista exclusiva de fornecedores.</p>
+        </div>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 250px;">
+            <img src="icone3.svg" alt="" style="width: 50px; margin-bottom: 10px;">
+            <h4 style="font-size: 1.4rem; color: #800040;">3. Faça seus pedidos!</h4>
+            <p style="font-size: 1.2rem; color: #333;">Entre em contato diretamente com os fornecedores e faça seus pedidos com preços incríveis!</p>
+        </div>
+    </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 - Seu Nome. Todos os direitos reservados.</p>
-</footer>
+<!-- Seção de Perguntas Frequentes -->
+<section style="background-color: #ffebf2; padding: 40px 20px;">
+    <h2 style="font-size: 2.2rem; color: #800040; margin-bottom: 20px;">❓ Perguntas Frequentes ❓</h2>
+    
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <!-- Pergunta 1 -->
+        <div style="margin-bottom: 15px; cursor: pointer;">
+            <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
+                <span style="font-size: 1.8rem; margin-right: 10px;">🔍</span> Como posso acessar a lista de fornecedores?
+            </h3>
+            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                Simples! Basta clicar em quero minha lista, escolher sua forma de pagamento e seguir para ter sua renda extra.🎉
+            </p>
+        </div>
+        
+        <!-- Pergunta 2 -->
+        <div style="margin-bottom: 15px; cursor: pointer;">
+            <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
+                <span style="font-size: 1.8rem; margin-right: 10px;">💳</span> Quais formas de pagamento vocês aceitam?
+            </h3>
+            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                Aceitamos diversas formas de pagamento! Você pode pagar via cartão de crédito,boleto bancário ou até PIX! É tudo muito rápido e seguro, sem complicação! 💸
+            </p>
+        </div>
 
-</body>
-</html>
+        <!-- Pergunta 3 -->
+        <div style="margin-bottom: 15px; cursor: pointer;">
+            <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
+                <span style="font-size: 1.8rem; margin-right: 10px;">📦</span> Quando recebo os produtos após o pagamento?
+            </h3>
+            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                O processo é bem rápido! Como nossos produtos são digitais, você receberá o acesso ao conteúdo instantaneamente após a confirmação do pagamento. Sem esperar dias para receber seus itens! 🚀
+            </p>
+        </div>
+        
+        <!-- Pergunta 4 -->
+        <div style="margin-bottom: 15px; cursor: pointer;">
+            <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
+                <span style="font-size: 1.8rem; margin-right: 10px;">🎯</span> Como sei se os fornecedores são confiáveis?
+            </h3>
+            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                Todos os fornecedores da nossa lista foram cuidadosamente selecionados. Eles possuem alta reputação, boas avaliações e oferecem produtos de qualidade! Nós garantimos para você, por isso você pode comprar com confiança! 💯
+            </p>
+        </div>
+        
+        <!-- Pergunta 5 -->
+        <div style="margin-bottom: 15px; cursor: pointer;">
+            <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
+                <span style="font-size: 1.8rem; margin-right: 10px;">💡</span> Posso revender os produtos que comprei na lista?
+            </h3>
+            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                Claro! Muitos dos nossos fornecedores oferecem preços de atacado, permitindo que você compre para revenda. Isso significa mais lucro para você! Só não se esqueça de dar aquele toque especial nas suas vendas! 🌟
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Depoimentos -->
+<section style="background-color: #f9f9f9; padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 2rem; color: #800040; margin-bottom: 20px;">💬 O que estão dizendo sobre nós?</h2>
+    
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <!-- Depoimento 1 -->
+        <div style="background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); max-width: 280px; flex: 1 1 260px; margin-bottom: 20px;">
+            <p style="font-size: 1rem; color: #333; font-style: italic; margin-bottom: 15px;">
+                "A Lista de Fornecedores mudou o jogo para meu negócio! Agora, tenho acesso a fornecedores confiáveis e ótimos preços! Adorei a variedade."
+            </p>
+            <div style="font-size: 1rem; color: #800040;">
+                <strong>Juliana R.</strong><br>
+                Maquiadora
+            </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div style="background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); max-width: 280px; flex: 1 1 260px; margin-bottom: 20px;">
+            <p style="font-size: 1rem; color: #333; font-style: italic; margin-bottom: 15px;">
+                "Encontrei tudo o que eu precisava! A lista é super completa e fácil de navegar. Estou muito satisfeita com minha compra!"
+            </p>
+            <div style="font-size: 1rem; color: #800040;">
+                <strong>Gabriela S.</strong><br>
+                Empreendedora
+            </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div style="background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); max-width: 280px; flex: 1 1 260px; margin-bottom: 20px;">
+            <p style="font-size: 1rem; color: #333; font-style: italic; margin-bottom: 15px;">
+                "O acesso imediato aos fornecedores foi perfeito! Agora, consigo encontrar as melhores opções de produtos com rapidez. Muito útil!"
+            </p>
+            <div style="font-size: 1rem; color: #800040;">
+                <strong>Lucas M.</strong><br>
+                Revendedor
+            </div>
+        </div>
+    </div>
+    
+    <!-- Formulário de Depoimento -->
+    <form id="testimonialForm" style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 1.4rem; color: #800040; margin-bottom: 20px;">Deixe seu depoimento:</h3>
+        
+        <div style="margin-bottom: 15px;">
+            <input type="text" id="testimonialName" name="testimonialName" placeholder="Seu Nome" style="width: 100%; padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <textarea id="testimonial" name="testimonial" placeholder="Seu Depoimento" rows="4" style="width: 100%; padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+        </div>
+
+        <button type="submit" style="background-color: #ff4081; color: white; padding: 10px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+    </form>
+</section>
+
+
+<!-- Seção de Instagram -->
+<section style="text-align: center; padding: 40px 20px; background-color: #800040;">
+    <h2 style="font-size: 2.2rem; color: white;">Siga-nos no Instagram</h2>
+    <a href="https://www.instagram.com/empreendi.shop" target="_blank" style="font-size: 1.5rem; color: white; text-decoration: none;">@empreendi.shop</a>
+</section>
+
+<!-- Botão interativo de "Quero Adquirir Minha Lista" -->
+<section style="text-align: center; padding: 40px 20px;">
+    <a href="https://mpago.la/2H8jB5D" target="_blank">
+        <button id="acquireButton" style="font-size: 1.6rem; background-color: #ff4081; color: white; padding: 15px 25px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: moveButton 2s ease-in-out infinite;">
+            🎉 Quero Adquirir Minha Lista! 🎉
+        </button>
+    </a>
+</section>
+<script>
+    function scrollToForm() {
+        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const payment = this.payment.value;
+
+        if (payment === "pix") {
+            window.location.href = "https://seulink.com/pagamento-pix"; // substitua pelo link real
+        } else if (payment === "cartao") {
+            window.location.href = "https://seulink.com/pagamento-cartao"; // substitua pelo link real
+        } else if (payment === "boleto") {
+            window.location.href = "https://seulink.com/pagamento-boleto"; // substitua pelo link real
+        } else {
+            alert("Por favor, escolha uma forma de pagamento.");
+        }
+    });
+</script>
+
+<!-- Formulário de aquisição -->
+<section id="formSection" style="padding: 40px 20px; background-color: #fff; text-align: center;">
+    <h2 style="font-size: 2rem; color: #800040; margin-bottom: 20px;">Adquira sua Lista Agora por Apenas R$ 15,00!</h2>
+    
+    <form id="purchaseForm" style="max-width: 500px; margin: 0 auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+        <input type="text" name="name" placeholder="Seu Nome" required style="width: 100%; padding: 10px; margin-bottom: 15px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        
+        <input type="email" name="email" placeholder="Seu E-mail" required style="width: 100%; padding: 10px; margin-bottom: 15px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+        
+        <label style="font-size: 1rem; color: #800040; margin-bottom: 10px; display: block;">Escolha a forma de pagamento:</label>
+        <select name="payment" required style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+            <option value="">Selecione</option>
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+        </select>
+
+        <button type="submit" style="background-color: #ff4081; color: white; padding: 12px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">
+            Finalizar Compra
+        </button>
+    </form>
+</section>
+
+
+<!-- CSS para animação do botão -->
+<style>
+    @keyframes moveButton {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #acquireButton:hover {
+        background-color: #800040;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+</style>
+
+<!-- JavaScript para interação das perguntas -->
+<script>
+    const questions = document.querySelectorAll('div[style*="cursor: pointer;"]');
+
+    questions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.querySelector('p');
+            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+        });
+    });
+
+    // JavaScript para submissão de depoimentos
+    document.getElementById("testimonialForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Obrigado pelo seu depoimento! 😊");
+        // Aqui você pode adicionar a lógica para enviar os dados do formulário para o servidor ou banco de dados.
+    });
+</script>
+<script>
+    function scrollToForm() {
+        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const payment = this.payment.value;
+
+     if (payment === "pix") {
+    window.location.href = "#pix-pagamento"; // link temporário
+} else if (payment === "cartao") {
+    window.location.href = "#cartao-pagamento"; // link temporário
+} else if (payment === "boleto") {
+    window.location.href = "#boleto-pagamento"; // link temporário
+}
