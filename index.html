@@ -3,31 +3,38 @@
     <p style="font-size: 1.5rem; font-weight: 600;">Para quem ama maquiagem 💅, biquíni 👙, acessórios 💍 e tudo para brilhar no seu negócio!</p>
 </header>
 
-<!-- Letreiro com texto animado -->
-<div class="marquee" style="text-align: center;">
-    <p class="marquee-text" style="font-size: 1.2rem; margin: 0;">
-        🛍️ Produtos a partir de R$ 1,00! Fornecedores com Suporte, Renda Extra e Lucros! 💰
-    </p>
-</div>
-
     <span></span>
 </div>
 
 <section style="text-align: center; padding: 40px 20px; background-color: #f4f4f4;">
     <h2 style="font-size: 2.2rem; color: #800040;">O que oferecemos?</h2>
     <p style="font-size: 1.4rem; max-width: 800px; margin: 0 auto; line-height: 1.6;">
-        Na Lista de Fornecedores, você encontra as melhores opções de maquiagens de qualidade 💄,biquínis incríveis👙, e acessórios modernos💍. 
-        Oferecemos um catálogo com os fornecedores mais confiáveis do mercado para você arrasar no seu negócio! 
-        Se você está começando ou já é um expert, nossa lista é perfeita para quem busca produtos de qualidade com preços competitivos. 
-        E o melhor? Tudo na palma da sua mão, com uma navegação simples e ágil para não perder tempo! ⏱️
+        Aqui você encontra uma lista completa para arrasar no seu negócio, oferecendo as tendências e se mantendo no topo das atualizações. 🚀
     </p>
 </section>
+
 <!-- Botão interativo de "Quero Adquirir Minha Lista" -->
 <section style="text-align: center; padding: 40px 20px;">
     <button id="acquireButton" onclick="scrollToForm()" style="font-size: 1.6rem; background-color: #ff4081; color: white; padding: 15px 25px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: moveButton 2s ease-in-out infinite;">
-        🎉 Quero Adquirir Minha Lista! 🎉
+        🎉 Quero Minha Lista! 🎉
     </button>
 </section>
+<script>
+    function scrollToForm() {
+        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Obrigado! Você será redirecionado para completar o pagamento.");
+        // Aqui você pode redirecionar para páginas de pagamento específicas dependendo da escolha
+    });
+</script>
+
+        </button>
+    </form>
+</section>
+
 <!-- Seção "Como Funciona?" -->
 <section style="text-align: center; padding: 40px 20px; background-color: #fff;">
     <h2 style="font-size: 2.2rem; color: #800040;">🛒 Como Funciona?</h2>
@@ -53,25 +60,25 @@
 <!-- Seção de Perguntas Frequentes -->
 <section style="background-color: #ffebf2; padding: 40px 20px;">
     <h2 style="font-size: 2.2rem; color: #800040; margin-bottom: 20px;">❓ Perguntas Frequentes ❓</h2>
-    
+
     <div style="max-width: 900px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <!-- Pergunta 1 -->
         <div style="margin-bottom: 15px; cursor: pointer;">
             <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
                 <span style="font-size: 1.8rem; margin-right: 10px;">🔍</span> Como posso acessar a lista de fornecedores?
             </h3>
-            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-                Simples! Basta clicar em quero minha lista, escolher sua forma de pagamento e seguir para ter sua renda extra.🎉
+            <p class="resposta" style="font-size: 1.2rem; color: #333; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+                Simples! Basta clicar em "Quero minha lista", escolher sua forma de pagamento e seguir para ter sua renda extra. 🎉
             </p>
         </div>
-        
+
         <!-- Pergunta 2 -->
         <div style="margin-bottom: 15px; cursor: pointer;">
             <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
                 <span style="font-size: 1.8rem; margin-right: 10px;">💳</span> Quais formas de pagamento vocês aceitam?
             </h3>
-            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-                Aceitamos diversas formas de pagamento! Você pode pagar via cartão de crédito,boleto bancário ou até PIX! É tudo muito rápido e seguro, sem complicação! 💸
+            <p class="resposta" style="font-size: 1.2rem; color: #333; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+                Aceitamos cartão de crédito, boleto bancário e PIX! Tudo rápido, fácil e seguro. 💸
             </p>
         </div>
 
@@ -80,31 +87,67 @@
             <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
                 <span style="font-size: 1.8rem; margin-right: 10px;">📦</span> Quando recebo os produtos após o pagamento?
             </h3>
-            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-                O processo é bem rápido! Como nossos produtos são digitais, você receberá o acesso ao conteúdo instantaneamente após a confirmação do pagamento. Sem esperar dias para receber seus itens! 🚀
+            <p class="resposta" style="font-size: 1.2rem; color: #333; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+                Imediatamente após a confirmação do pagamento! Tudo digital e instantâneo. 🚀
             </p>
         </div>
-        
+
         <!-- Pergunta 4 -->
         <div style="margin-bottom: 15px; cursor: pointer;">
             <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
                 <span style="font-size: 1.8rem; margin-right: 10px;">🎯</span> Como sei se os fornecedores são confiáveis?
             </h3>
-            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-                Todos os fornecedores da nossa lista foram cuidadosamente selecionados. Eles possuem alta reputação, boas avaliações e oferecem produtos de qualidade! Nós garantimos para você, por isso você pode comprar com confiança! 💯
+            <p class="resposta" style="font-size: 1.2rem; color: #333; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+                Selecionamos apenas fornecedores com boa reputação e avaliação! Pode confiar. 💯
             </p>
         </div>
-        
+
         <!-- Pergunta 5 -->
         <div style="margin-bottom: 15px; cursor: pointer;">
             <h3 style="font-size: 1.5rem; color: #800040; display: flex; align-items: center;">
                 <span style="font-size: 1.8rem; margin-right: 10px;">💡</span> Posso revender os produtos que comprei na lista?
             </h3>
-            <p style="font-size: 1.2rem; color: #333; display: none; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
-                Claro! Muitos dos nossos fornecedores oferecem preços de atacado, permitindo que você compre para revenda. Isso significa mais lucro para você! Só não se esqueça de dar aquele toque especial nas suas vendas! 🌟
+            <p class="resposta" style="font-size: 1.2rem; color: #333; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+                Claro! Muitos fornecedores oferecem preços de atacado perfeitos para revenda. 🌟
             </p>
         </div>
     </div>
+</section>
+
+<!-- Estilo para animação suave -->
+<style>
+  .resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .resposta.ativa {
+    max-height: 500px; /* Pode ajustar se os textos forem muito grandes */
+  }
+</style>
+
+<!-- Script para abrir/fechar perguntas com animação -->
+<script>
+  const perguntas = document.querySelectorAll('section h3');
+
+  perguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', () => {
+      const resposta = pergunta.nextElementSibling;
+
+      // Fecha todas as outras
+      document.querySelectorAll('.resposta').forEach(p => {
+        if (p !== resposta) {
+          p.classList.remove('ativa');
+        }
+      });
+
+      // Abre ou fecha a clicada
+      resposta.classList.toggle('ativa');
+    });
+  });
+</script>
+
 </section>
 
 <!-- Seção de Depoimentos -->
@@ -161,121 +204,40 @@
         <button type="submit" style="background-color: #ff4081; color: white; padding: 10px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
     </form>
 </section>
-
-
-<!-- Seção de Instagram -->
-<section style="text-align: center; padding: 40px 20px; background-color: #800040;">
-    <h2 style="font-size: 2.2rem; color: white;">Siga-nos no Instagram</h2>
-    <a href="https://www.instagram.com/empreendi.shop" target="_blank" style="font-size: 1.5rem; color: white; text-decoration: none;">@empreendi.shop</a>
-</section>
-
-<!-- Botão interativo de "Quero Adquirir Minha Lista" -->
-<section style="text-align: center; padding: 40px 20px;">
-    <a href="https://mpago.la/2H8jB5D" target="_blank">
-        <button id="acquireButton" style="font-size: 1.6rem; background-color: #ff4081; color: white; padding: 15px 25px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: moveButton 2s ease-in-out infinite;">
-            🎉 Quero Adquirir Minha Lista! 🎉
-        </button>
-    </a>
-</section>
-<script>
-    function scrollToForm() {
-        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const payment = this.payment.value;
-
-        if (payment === "pix") {
-            window.location.href = "https://seulink.com/pagamento-pix"; // substitua pelo link real
-        } else if (payment === "cartao") {
-            window.location.href = "https://seulink.com/pagamento-cartao"; // substitua pelo link real
-        } else if (payment === "boleto") {
-            window.location.href = "https://seulink.com/pagamento-boleto"; // substitua pelo link real
-        } else {
-            alert("Por favor, escolha uma forma de pagamento.");
-        }
-    });
-</script>
-
-<!-- Formulário de aquisição -->
-<section id="formSection" style="padding: 40px 20px; background-color: #fff; text-align: center;">
-    <h2 style="font-size: 2rem; color: #800040; margin-bottom: 20px;">Adquira sua Lista Agora por Apenas R$ 15,00!</h2>
-    
-    <form id="purchaseForm" style="max-width: 500px; margin: 0 auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
-        <input type="text" name="name" placeholder="Seu Nome" required style="width: 100%; padding: 10px; margin-bottom: 15px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
-        
-        <input type="email" name="email" placeholder="Seu E-mail" required style="width: 100%; padding: 10px; margin-bottom: 15px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
-        
-        <label style="font-size: 1rem; color: #800040; margin-bottom: 10px; display: block;">Escolha a forma de pagamento:</label>
-        <select name="payment" required style="width: 100%; padding: 10px; margin-bottom: 20px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
-            <option value="">Selecione</option>
-            <option value="pix">PIX</option>
-            <option value="cartao">Cartão de Crédito</option>
-            <option value="boleto">Boleto Bancário</option>
-        </select>
-
-        <button type="submit" style="background-color: #ff4081; color: white; padding: 12px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">
-            Finalizar Compra
         </button>
     </form>
 </section>
+<!-- Seção de pagamento -->
+   <section id="formSection" style="text-align: center; padding: 40px 20px; background-color: #f9f9f9;">
 
+        <h2 style="font-size: 2rem; color: #800040;">Escolha sua Forma de Pagamento</h2>
 
-<!-- CSS para animação do botão -->
-<style>
-    @keyframes moveButton {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
+        <!-- Formulário de pagamento -->
+        <form style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <!-- Nome e E-mail do cliente -->
+            <div style="margin-bottom: 20px;">
+                <input type="text" id="customerName" name="customerName" placeholder="Seu Nome" required style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
+            </div>
 
-    #acquireButton:hover {
-        background-color: #800040;
-        transform: scale(1.05);
-        transition: all 0.3s ease;
-    }
-</style>
+            <div style="margin-bottom: 20px;">
+                <input type="email" id="customerEmail" name="customerEmail" placeholder="Seu E-mail" required style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
+            </div>
 
-<!-- JavaScript para interação das perguntas -->
-<script>
-    const questions = document.querySelectorAll('div[style*="cursor: pointer;"]');
+            <!-- Botão de Finalizar Compra --><section style="text-align: center; padding: 40px 20px;">
+    <a href="https://mpago.la/2H8jB5D" target="_blank">
+        <button id="acquireButton" style="font-size: 1.6rem; background-color: #ff4081; color: white; padding: 15px 25px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: moveButton 2s ease-in-out infinite;">
+                Finalizar Compra
+            </a>
+        </form>
+    </section>
 
-    questions.forEach(question => {
-        question.addEventListener('click', function() {
-            const answer = this.querySelector('p');
-            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
-        });
-    });
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Siga-nos no Instagram</h2>
+    <a href="https://www.instagram.com/empreendi.shop" target="_blank" style="font-size: 1.5rem; color: black; text-decoration: none;">@empreendi.shop</a>
+ Todos os direitos reservados.</p>
+                                    </footer>
 
-    // JavaScript para submissão de depoimentos
-    document.getElementById("testimonialForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Obrigado pelo seu depoimento! 😊");
-        // Aqui você pode adicionar a lógica para enviar os dados do formulário para o servidor ou banco de dados.
-    });
-</script>
-<script>
-    function scrollToForm() {
-        document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    document.getElementById("purchaseForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const payment = this.payment.value;
-
-     if (payment === "pix") {
-    window.location.href = "#pix-pagamento"; // link temporário
-} else if (payment === "cartao") {
-    window.location.href = "#cartao-pagamento"; // link temporário
-} else if (payment === "boleto") {
-    window.location.href = "#boleto-pagamento"; // link temporário
-}
+</body>
+</html>
+  
